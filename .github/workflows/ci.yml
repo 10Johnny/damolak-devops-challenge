@@ -21,14 +21,6 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Display repository IDs for OIDC troubleshooting
-        env:
-          OWNER_ID: ${{ github.repository_owner_id }}
-          REPOSITORY_ID: ${{ github.repository_id }}
-        run: |
-          echo "Owner ID: $OWNER_ID"
-          echo "Repository ID: $REPOSITORY_ID"
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:

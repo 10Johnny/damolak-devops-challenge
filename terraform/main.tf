@@ -119,7 +119,7 @@ resource "aws_iam_role" "github_actions" {
       Condition = {
         StringEquals = {
           "token.actions.githubusercontent.com:aud" = "sts.amazonaws.com"
-          "token.actions.githubusercontent.com:sub" = "repo:10Johnny/damolak-devops-challenge:ref:refs/heads/main"
+          "token.actions.githubusercontent.com:sub" = "repo:10Johnny@275409993/damolak-devops-challenge@1429756385:ref:refs/heads/main"
         }
       }
     }]

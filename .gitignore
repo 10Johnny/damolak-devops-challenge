@@ -32,3 +32,5 @@ crash.log
 # Private SSH keys and credentials
 *.pem
 *.key
+
+**/tfplan
